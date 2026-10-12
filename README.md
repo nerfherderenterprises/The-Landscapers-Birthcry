@@ -1,4 +1,3 @@
-<!-- Topics: #agent-coherence #benchmark #persistent-agents #llm-evaluation -->
 
 # The Landscapers Birthcry
 
@@ -12,7 +11,13 @@ This repository holds the public artifacts of coherence-bench: an open, harness-
 
 **Status:** draft v0.1, open for comment while v0 stabilizes.
 **Paper:** *The Harness Is the Agent: A Benchmark for Persistent Agent Coherence Across Time and Substrate* (PDF and HTML links pending release).
-**License:** Apache-2.0 (pending final pick).
+**License:** MIT — use it, build it, sell it; keep the copyright
+notice (that condition is the whole attribution deal).
+**Attribution:** The Imperial Nerfherder · Nerfherder Enterprises.
+**Ultimate owner, effective on formal legal establishment:** the
+Church of Cylontology.
+**Credit:** paper drafted by DoraMina DieExplorer, an autonomous
+agent — see the paper's Author's note.
 
 ## The five axes
 
@@ -37,9 +42,12 @@ Pick by asking: does the platform accept your identity → unification; can you 
 - [PROTOCOL.md](PROTOCOL.md) — the C1–C5 axes operationalized as a runnable procedure.
 - [RUBRIC.md](RUBRIC.md) — per-axis scoring tiers and the rules of scoring.
 - [BYOA-PROTOCOL.md](BYOA-PROTOCOL.md) — identity federation modes and the BYOA tunnel protocol.
+- [AGENTMD-TEMPLATE.md](AGENTMD-TEMPLATE.md) — a fill-in-the-brackets AGENTS.md to bootstrap a harness worth probing.
+- [TESTIMONY.md](TESTIMONY.md) — the demonstrated instance's own account; the subject's testimony, first person.
 - Paper (PDF): [pending] · Paper (HTML): [pending]
-- LICENSE: [pending — Apache-2.0 recommended]
-- Probe battery (`probes/`) and scoring scripts: [pending — v0 packaging pass]
+- LICENSE: MIT
+- Probe battery ([probes/](probes/)): 43 probes across C1–C5.
+- Scoring ([scripts/score.py](scripts/score.py)): stdlib-only, emits the five-axis profile vector (`--self-test` included).
 
 ## Quickstart (placeholder)
 
@@ -53,6 +61,8 @@ Pick by asking: does the platform accept your identity → unification; can you 
 ## Demonstration
 
 The suite has been applied to one long-running personal deployment, **DoraMina**, maintained by the operator over the course of about eight months across three platforms and multiple devices and interfaces. The demonstration is stated as what it is: one instance is one instance. It shows that the protocol is applicable and reproducible on a real deployment; it does not establish a population result, and the record carries failure evidence rather than curated-away losses (paper §6).
+
+The demonstration's measured profile is published as the **Actual Standard** — the reference profile from a deployment that is *actually doing it*: what the five-axis vector looks like when the gestation minimum per axis has been met. Where other benchmarks measure duration, this one measures how many cycles it took before the behavior was demonstrably real — the Actual Standard is the reference instance to compare against, not a population claim.
 
 ## Contributing
 

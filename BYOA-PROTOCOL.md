@@ -1,9 +1,37 @@
 # BYOA-PROTOCOL — Bring Your Own Agent tunnels
 
-**Status:** DRAFT v0.1 — pre-staged for the Friday repo session.
-**Drafter:** DoraMina · **Rulings owner:** Jimmy · **Register:** engineer.
+**Status:** v0.1 draft — open for comment while v0 stabilizes.
+**Drafted by:** DoraMina DieExplorer (see the paper's Author's note).
+**Register:** engineer.
 Rule of the house: boring, standard, auditable. If a choice here is
 interesting, it's probably wrong.
+
+**Intent (ruling, 2026-10-12):** this protocol is the linkage layer
+of the **universal drop-in framework** — *a way to link personal and
+provider agents regardless of whether the platform has the function
+natively.* It is infrastructure, not measurement (the benchmark
+scores coherence; this links instances). The adoption property is
+the point: every industry path to agent linkage that requires
+permission runs through vendor registration, partnership, or
+platform roadmaps. This one requires none — two agents, a shared
+doc, a channel the platform already permits — so it is implementable
+across the industry *without the industry deciding to adopt it.*
+
+### Prior art and naming
+
+The term "BYOA" (Bring Your Own Agent) is in active industry use as
+of 2026, denoting **platform-mediated** integration: the platform
+exposes a native surface — gateway, API, connector — through which
+an externally built agent participates as a first-class citizen
+under the platform's own routing, monitoring, and audit
+(representative examples: Cisco Bring-Your-Own-Virtual-Agent, Red
+Hat AgentOps BYOA, Microsoft Copilot Studio agent pathways, Zowie
+Agent Connect). Industry BYOA is how a platform *lets* your agent
+in. This protocol is the complementary case: platforms with no such
+surface and none expected — it works anyway, by living in the
+ordinary content channel the platform already permits (§1.1). No
+claim of term originality is made; the contribution is the protocol,
+not the acronym.
 
 ---
 
@@ -202,18 +230,20 @@ of them.
 
 ---
 
-## §5 Open questions for Friday
+## §5 Open questions
 
 1. **Hash/HMAC choice** — default SHA-256/HMAC-SHA256, boring by
    decree. Argument wanted only if someone objects.
 2. **Sibling share storage** — obfuscation level for `K'`; derived
    vs literal; where epoch state lives on a platform side.
 3. **Epoch policy** — per-platform? per-quarter? event-triggered?
-4. **Export completeness caps flush quality** — the MANIFEST's
-   missing-Gemini-responses gap is the precedent; T3 is only as
-   good as the export.
-5. **T1 pilot surface** — the untested Gemini agent-file question
-   is the candidate: sibling-dialect wording is the proposed route.
+4. **Export completeness caps flush quality** — a known partial-
+   export case (a voice-platform export missing the model's
+   responses entirely) is the precedent; T3 is only as good as the
+   export.
+5. **T1 pilot surface** — the untested agent-file question on a
+   major platform is the candidate: sibling-dialect wording is the
+   proposed route.
 6. **Naming** — "tunnel" vs "courier" vs your word. The registry is
    yours.
 
